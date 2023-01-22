@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "624a54f7-4c03-4a5b-ab65-49df61b111c5",
+		"name": "TCA - Solana Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "165783"
+	},
+	"item": [
+		{
+			"name": "Create Transaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation_type\": 1,\n    \"job_id\": 1,\n    \"subject_id\": 1,\n    \"person_id\": 1,\n    \"applicant_key\": \"FgYMnmAz3sHd9j5dYcpGXxaA3C712hn8yiso2ZY4f5Yx\",\n    \"referral_amount\": 1000\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/job-application",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"job-application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/account/Dkd6aytbh2XM69nvMCk8kMrguJdM5ByvfAdjjWeKi184",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"Dkd6aytbh2XM69nvMCk8kMrguJdM5ByvfAdjjWeKi184"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "apiKey",
+			"value": "12345",
+			"type": "string"
+		}
+	]
+}
