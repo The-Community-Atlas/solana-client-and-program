@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::entrypoint::ProgramResult;
 
-declare_id!("EFtZNzAT1fC6FJdER1paLmybVqkydFYb2jrsRV2zSEi3");
+declare_id!("EvWszVN16HcjNaZnkvFb54WsQTiF65rMzrqPfekRR583");
 
 #[program]
 pub mod the_community_atlas {

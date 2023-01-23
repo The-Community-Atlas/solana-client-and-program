@@ -9,7 +9,7 @@ the_community_atlas = "EvWszVN16HcjNaZnkvFb54WsQTiF65rMzrqPfekRR583"
 the_community_atlas = "EvWszVN16HcjNaZnkvFb54WsQTiF65rMzrqPfekRR583"
 
 [programs.mainnet]
-the_community_atlas = "EFtZNzAT1fC6FJdER1paLmybVqkydFYb2jrsRV2zSEi3"
+the_community_atlas = "EvWszVN16HcjNaZnkvFb54WsQTiF65rMzrqPfekRR583"
 
 [registry]
 url = "https://api.apr.dev"
