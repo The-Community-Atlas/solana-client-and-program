@@ -1,6 +1,26 @@
 # The Community Atlas - Solana Implementation
 
-This repository contains the source code of the Solana Program developed by [The Community Atlas](https://thecommunityatlas.com) to store Job Application data on Solana Blockchain.
+This repository contains the source code of the Solana Program developed by [The Community Atlas](https://thecommunityatlas.com).
+
+The purpose of this code is to provide the backend structure to leverage the Solana ecosystem to offer revenue sharing incentives to users in the form of “bounties”.
+
+This will help applications build trust among their members as they provide referral incentives in the form of bounties.
+
+The system has three potential actors:
+- Users or Communities sharing the bounty with their members of followers
+- Users who refer the bounty to a friend
+- Users who apply for the bounty (either directly of after being referred)
+
+Members can either:
+- Apply for a bounty directly (in which casse the bounty is to be shared between the community and the user)
+- Or Refer a friend for the bounty, who in turn can apply to the bounty (in which case the bounty is to be shared between the community, the referrer and the user who applies)
+
+The system will:
+- track the referrals
+- and the revenue sharing due if a referral is successful
+
+Next steps:
+The next version of the application will also allow to directly distribute crypto through all the wallets involved.
 
 In this repository you can find the code of the Solana Program and the code of the Node.js API used to save Job Applications and Referrals.
 
